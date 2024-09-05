@@ -79,8 +79,6 @@ El prototipo de Pet Finder refleja el diseño final con todos los estilos visual
      
    * Figma: Para el diseño y prototipado de la interfaz.
      
-   * Jets: Framework utilizado para el backend.
-     
    * GitHub: Para la gestión de proyectos y seguimiento de problemas.
 
 
