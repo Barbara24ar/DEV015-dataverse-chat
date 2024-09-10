@@ -29,7 +29,7 @@ export function Chat(props) {
     document.head.appendChild(faviconElement);
   }
   faviconElement.href = itemData.imageUrl || 'ruta-a-imagen-default.svg';
-  
+
   document.querySelector("head").innerHTML += `
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
   `;
@@ -44,11 +44,15 @@ export function Chat(props) {
       <div class="data__image">
         <img class="data__image__background" src="${itemData.imageUrl}" alt="${itemData.name}" itemprop="image"/>
       </div>
-      <div class="data__text">
         <div class="data__text__title">
           <h3 id="title__name" itemprop="name">${itemData.name}</h3>
         </div>
+        <div class="data__text">
         <p class="data__text__description" itemprop="description">${itemData.description}</p>
+
+        <p class="data__text__description" itemprop="facts">${itemData.facts.gender}</p>
+        <p class="data__text__description" itemprop="facts">${itemData.facts.pet}</p>
+        <p class="data__text__description" itemprop="facts">${itemData.facts.petSize}</p>
       </div>
     `;
   mainElement.appendChild(dataElement);
